@@ -1,0 +1,121 @@
+$fa-font-path: "/bower_components/font-awesome/fonts";
+@import "font-awesome/scss/font-awesome";
+@import url(http://fonts.googleapis.com/css?family=Averia+Serif+Libre);
+
+
+/* Helpers */
+.sr-only{
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+
+$bg: #eeeedd;
+$primary: #444422;
+$accent1: #DD6514;
+$accent2: #F48C8C;
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Main */
+
+body {
+    background: $bg;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Averia Serif Libre', serif;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+a{
+    color: $accent1;
+    &:hover, &:focus{
+        color: $accent2;
+    }
+}
+
+p{
+    margin: 1em 0 1em 0;
+}
+
+#ribbon {
+    font-size: 20pt;
+    width: 30%;
+    position: relative;
+    background: $primary;
+    color: $bg;
+    text-align: center;
+    margin-top: 30px;
+    &:after{
+        content: "";
+        position: absolute;
+        display: block;
+        bottom: -0.5em;
+        border: 1.5em solid #35341C;
+        z-index: -1;
+        right: -2em;
+        border-left-width: 1.5em;
+        border-right-color: transparent;
+    }
+    h1{
+        font-size: 20pt;
+        padding: 0.8em 0 0.8em 0;
+        margin: 0px;
+    }
+    .ribbon-content{
+        &:after{
+            content: "";
+            position: absolute;
+            display: block;
+            border-style: solid;
+            border-color: #212010 transparent transparent transparent;
+            bottom: -0.5em;
+            right: 0.5em;
+            border-width: 0.5em 0.5em 0 0;
+        }
+    }
+}
+
+#side{
+    width: 32%;
+    float: left;
+    padding: 0px 10px 0px 10px;
+    border-right: 2px dashed $primary;
+    border-color: rgba(68, 68, 34, 0.8);
+    margin: 20px 15px 0px 0px;
+}
+
+main{
+    float: left;
+    padding-top: 1em;
+    ul.education{
+        list-style-type: none;
+        h3{
+            margin: 0.2em 0 0.2em 0;
+        }
+    }
+}
+
+#social{
+    font-size: 18pt;
+    text-align: center;
+    a:not(:first-child){
+        margin-left: 10px;
+    }
+}
+
