@@ -13,7 +13,7 @@ $fa-font-path: "/bower_components/font-awesome/fonts";
     overflow:hidden;
 }
 
-$bg: #eeeedd;
+$bg: #F3F3E2;
 $primary: #444422;
 $accent1: #DD6514;
 $accent2: #F48C8C;
@@ -94,15 +94,15 @@ p{
 #side{
     width: 32%;
     float: left;
-    padding: 0px 10px 0px 10px;
+    padding: 0px 15px 0px 10px;
     border-right: 2px dashed $primary;
     border-color: rgba(68, 68, 34, 0.8);
-    margin: 20px 15px 0px 0px;
+    margin: 30px 30px 0px 0px;
 }
 
 main{
     float: left;
-    padding-top: 1em;
+    padding-top: 1.3em;
     ul.education{
         list-style-type: none;
         h3{
